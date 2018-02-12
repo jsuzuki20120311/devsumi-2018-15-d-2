@@ -1,0 +1,50 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "MyRefer(Web)のフロントエンド側プロジェクト",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run css:build && npm run js:build",
+    "dev": "npm run css:dev & npm run js:dev & npm run styleguide:dev",
+    "styleguide:open": "opn http://localhost:3000",
+    "eslint:all": "eslint --config ./.eslintrc.js --ext .js,.jsx src ../public/assets/js; exit 0",
+    "eslint": "eslint --config ./.eslintrc.js",
+    "css:build": "node-sass --recursive --output-style compressed ./src/scss/style.scss ../public/assets/css/style.css",
+    "js:build": "NODE_ENV=production webpack --progress --colors",
+    "css:dev": "node-sass --recursive --output-style compressed --source-map-embed true --source-map-contents true ./src/scss/style.scss ../public/assets/css/style.css && node-sass --watch --recursive --output-style compressed --source-map-contents true --source-map-embed true ./src/scss/style.scss ../public/assets/css/style.css",
+    "js:dev": "NODE_ENV=development webpack -d --progress --colors --watch",
+    "styleguide:dev": "cpx '../public/assets/**/*' './docs/assets/' && styleguide --title 'MyRefer Styleguide' --kssSource 'src/scss/**/*.scss' --output 'docs' --styleSource '../public/assets/css/style.css' --overviewPath './src/scss/README.md' --watch --server --port 3000 --afterBody '<script src=\"//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js\"></script><script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js\"></script><script src=\"//cdnjs.cloudflare.com/ajax/libs/multiselect/2.2.9/js/multiselect.min.js\"></script><script>$(window).bind(\"styleguide:onRendered\", function(e) {var script = document.createElement(\"script\"); script.type = \"text/javascript\"; script.src = \"/assets/js/app.js\"; var firstScript = document.getElementsByTagName(\"script\")[0]; firstScript.parentNode.insertBefore(script, firstScript); });</script>'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "PERSOL CAREER CO., LTD.",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "babel-core": "~6.25.0",
+    "babel-loader": "~6.4.0",
+    "babel-preset-es2015": "~6.24.1",
+    "babel-preset-react": "~6.24.1",
+    "classnames": "~2.2.5",
+    "comma-number": "~2.0.0",
+    "eventemitter2": "~4.1.2",
+    "jquery": "~2.2.0",
+    "jquery-datetimepicker": "~2.5.12",
+    "lodash": "~4.17.4",
+    "moment": "~2.19.2",
+    "node-sass": "~3.13.1",
+    "qs": "~6.5.0",
+    "react": "~15.6.1",
+    "react-dom": "~15.6.1",
+    "react-nl2br": "~0.2.0",
+    "react-router-dom": "~4.1.2",
+    "webpack": "~2.7.0"
+  },
+  "devDependencies": {
+    "cpx": "~1.5.0",
+    "eslint": "~4.9.0",
+    "eslint-plugin-react": "~7.4.0",
+    "opn-cli": "~3.1.0",
+    "sc5-styleguide": "~0.3.47"
+  }
+}
