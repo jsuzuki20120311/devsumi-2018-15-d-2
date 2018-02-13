@@ -1,0 +1,10 @@
+/**
+ * グローバルCSSのエントリポイント
+ */
+
+.message {
+	width: calc(100vw - 20px);
+	height: 200px;
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+	font-size: 14px;
+}
