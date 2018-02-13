@@ -2,7 +2,9 @@ import * as React from 'react';
 
 import { Item } from './item.component';
 
-
+/**
+ * @augments {React.Component<{itemList: Array, onChangeItemList: (itemList: Array) => void }, { itemList: Array }>}
+ */
 export class ItemList extends React.Component {
 
 	constructor(props) {

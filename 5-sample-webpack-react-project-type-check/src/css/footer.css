@@ -1,0 +1,10 @@
+.footer {
+	position: fixed;
+	background-color: gray;
+	color: #fff;
+	top: calc(100vh - 120px);
+	width: 100vw;
+	height: 120px;
+	padding: 10px;
+	box-sizing: border-box;
+}

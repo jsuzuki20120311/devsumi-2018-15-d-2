@@ -1,6 +1,15 @@
 import * as React from 'react';
 
-
+/**
+ * @augments {React.Component<
+   {
+     item: { itemName: string, price: number, itemNumber: number },
+     onChangeItem: (item: { itemName: string, price: number, itemNumber: number }) => void, 
+     onDeleteItem: () => void
+    },
+    { itemName: string, price: number, itemNumber: number }
+   >}
+ */
 export class Item extends React.Component {
 
 	constructor(props) {

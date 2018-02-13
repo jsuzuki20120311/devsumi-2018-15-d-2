@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+/**
+ * @augments {React.Component<{ onAddItem: (item: { itemName: string, price: number, itemNumber: number }) => void }, { itemName: string, price: number, itemNumber: number }>}
+ */
 export class AddItemForm extends React.Component {
 
 	constructor(props) {

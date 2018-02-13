@@ -5,6 +5,7 @@ import { ItemList } from './item-list.component';
 
 /**
  * アプリケーションの最親に位置するコンポーネント
+ * @augments {React.Component<{}, {itemList: Array.<{ itemName: string, price: number, itemNumber: number }>}>}
  */
 export class App extends React.Component {
 
@@ -17,6 +18,9 @@ export class App extends React.Component {
 		this.handleChangeItemList = this.handleChangeItemList.bind(this);
 	}
 
+	/**
+	 * @param {{ itemName: string, price: number, itemNumber: number }} item
+	 */
 	handleAddItem(item) {
 		this.state.itemList.push(item);
 		this.setState({
@@ -24,6 +28,9 @@ export class App extends React.Component {
 		});
 	}
 
+	/**
+	 * @param {Array.<{ itemName: string, price: number, itemNumber: number }>} itemList 
+	 */
 	handleChangeItemList(itemList) {
 		this.setState({
 			itemList: itemList
@@ -32,7 +39,7 @@ export class App extends React.Component {
 
 	/**
 	 * 合計金額を算出して返します。
-	 * @param itemList {Array}
+	 * @param itemList {Array.<{ itemNumber: number, price: number }>}
 	 * @return {number}
 	 */
 	calcTotalPrice(itemList) {

@@ -1,0 +1,7 @@
+.contents {
+	position: fixed;
+	top: 120px;
+	height: calc(100vh - 240px);
+	width: 100vw;
+	overflow: auto;
+}
