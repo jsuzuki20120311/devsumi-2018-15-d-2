@@ -32,7 +32,7 @@ Developers Summit 2018 1日目【15-D-2】の補足用リポジトリです。
 
  * React.Component で jQueryを使用したUIをラップしたコンポーネントを作成したサンプルプロジェクト。
 
- * 例では [Select2](https://select2.org/){:target="_blank"} をラップしてReact.Component化しています。
+ * 例では [Select2](https://select2.org/) をラップしてReact.Component化しています。
 
 
 ### [5-sample-react-jquery-project-type-check](https://github.com/jsuzuki20120311/devsumi-2018-15-d-2/tree/work/5-sample-react-jquery-project-type-check)
