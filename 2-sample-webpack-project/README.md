@@ -1,4 +1,10 @@
-# 3-sample-webpack-react-project
+# 2-sample-babel-project
+
+## 概要
+
+ * webpackを使用したサンプルプロジェクト
+
+ * import/export 構文を使用するためにBabelも使用しています。Reactは使用していません。
 
 
 ## 必要なライブラリのインストール
@@ -14,7 +20,7 @@ $ npm install
 $ npm run server
 ```
 
- * ブラウザから http://localhost:3003 にアクセス。
+ * ブラウザから http://localhost:3002 にアクセス。
 
  * 画面上のボタンをクリックする。
 
