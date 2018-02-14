@@ -1,6 +1,6 @@
 # IDE
 .idea
-.iml
+*.iml
 
 node_modules
 dist
