@@ -35,7 +35,7 @@ Developers Summit 2018 1日目【15-D-2】の補足用リポジトリです。
  * 例では [Select2](https://select2.org/) をラップしてReact.Component化しています。
 
 
-### [5-sample-react-jquery-project-type-check](https://github.com/jsuzuki20120311/devsumi-2018-15-d-2/tree/work/5-sample-react-jquery-project-type-check)
+### [5-sample-react-jquery-project-type-check](https://github.com/jsuzuki20120311/devsumi-2018-15-d-2/tree/master/5-sample-webpack-react-project-type-check)
 
  * 3-sample-webpack-react-project に TypeScriptの型チェックを組み合わせたプロジェクトです。
 
